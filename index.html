@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--<header class="sticky-top" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand h1 mb-0" href="#">POS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">User</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>-->
+
+    <input type="checkbox" id="cart">
+    <label for="cart" class="cart-label">
+        <i class="fas fa-shopping-cart"></i>
+    </label>
+    <h3 class="headLogo">
+        POS System Services
+    </h3>
+
+    <!-- sideBar -->
+
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <i class="fas fa-home"></i>
+            <a href="#">Home</a>
+        </div>
+        <div class="sidebar-menu">
+            <i class="fas fa-gear"></i>
+            <a href="#">Settings</a>
+        </div>
+        <div class="sidebar-menu">
+            <i class="fas fa-user"></i>
+            <a href="#">Profile</a>
+        </div>
+    </div>
+
+    <div class="productsContainer">
+        <div class="productCard">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-Products-tab" data-toggle="pill"
+                        data-target="#pills-Products" type="button" role="tab" aria-controls="pills-Products"
+                        aria-selected="true">Products</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-categories-tab" data-toggle="pill"
+                        data-target="#pills-categories" type="button" role="tab" aria-controls="pills-categories"
+                        aria-selected="false">categories</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Settings</button>
+                </li>
+            </ul>
+            <div class="tab-content productContent px-0" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-Products" role="tabpanel"
+                    aria-labelledby="pills-Products-tab">
+                    <div class="productOptions">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="searchOption">
+                                    <div class="row">
+                                        <div class="col-md-8 mt-3">
+                                            <input class="form-control" type="text" placeholder="Find.."></input>
+                                        </div>
+                                        <div class="col-md-4 mt-3">
+                                            <button class="btn btn-success">Find</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-3">
+                                <div class="multiOption">
+                                    <button class="btn btn-primary rounded-pill">Add Product</button>
+                                    <button class="btn btn-warning rounded-pill mx-2">All Products</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listProduct mt-5">
+                        <div class="product">
+                            <img class="card-img" src="img/story.jpg">
+                            <div class="card-details">
+                                <h2> LD01 LOUNGE CHAIR</h2>
+                                <p class="price">100$</p>
+                                <button class="addCart px-5">Add</button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="card-img" src="img/story.jpg">
+                            <div class="card-details">
+                                <h2> LD01 LOUNGE CHAIR</h2>
+                                <p class="price">100$</p>
+                                <button class="addCart px-5">Add</button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="card-img" src="img/story.jpg">
+                            <div class="card-details">
+                                <h2> LD01 LOUNGE CHAIR</h2>
+                                <p class="price">100$</p>
+                                <button class="addCart px-5">Add</button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="card-img" src="img/story.jpg">
+                            <div class="card-details">
+                                <h2> LD01 LOUNGE CHAIR</h2>
+                                <p class="price">100$</p>
+                                <button class="addCart px-5">Add</button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="card-img" src="img/story.jpg">
+                            <div class="card-details">
+                                <h2> LD01 LOUNGE CHAIR</h2>
+                                <p class="price">100$</p>
+                                <button class="addCart px-5">Add</button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="card-img" src="img/story.jpg">
+                            <div class="card-details">
+                                <h2> LD01 LOUNGE CHAIR</h2>
+                                <p class="price">100$</p>
+                                <button class="addCart px-5">Add</button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="card-img" src="img/story.jpg">
+                            <div class="card-details">
+                                <h2> LD01 LOUNGE CHAIR</h2>
+                                <p class="price">100$</p>
+                                <button class="addCart px-5">Add</button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="card-img" src="img/story.jpg">
+                            <div class="card-details">
+                                <h2> LD01 LOUNGE CHAIR</h2>
+                                <p class="price">100$</p>
+                                <button class="addCart px-5">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-categories" role="tabpanel" aria-labelledby="pills-categories-tab">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-10">
+                            <div class="categorySearch">
+                                <div class="row">
+                                    <div class="col-md-8 mt-3">
+                                        <select class="form-control">
+                                            <option value="findCat" selected>Find Category</option>
+                                            <option value="all">All</option>
+                                            <option value="sales">Sales</option>
+                                            <option value="orders">Orders</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    Settings
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="productOrder">
+        <h3>Order Items</h3>
+        <div class="orderContainer">
+            <div class="productItem">
+                <div class="item">
+                    <div class="image">
+                        <img src="img/story.jpg">
+                    </div>
+                    <p class="name">
+                        LD01 LOUNGE CHAIR
+                    </p>
+                    <p class="totalPrice">$200</p>
+                </div>
+                <div class="itemQuantaty">
+                    <span class="qtyOption"><i class="fas fa-minus"></i></span>
+                    <span>1</span>
+                    <span class="qtyOption"><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+            <div class="productItem">
+                <div class="item">
+                    <div class="image">
+                        <img src="img/story.jpg">
+                    </div>
+                    <p class="name">
+                        LD01 LOUNGE CHAIR
+                    </p>
+                    <p class="totalPrice">$200</p>
+                </div>
+                <div class="itemQuantaty">
+                    <span class="qtyOption"><i class="fas fa-minus"></i></span>
+                    <span>1</span>
+                    <span class="qtyOption"><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+            <div class="productItem">
+                <div class="item">
+                    <div class="image">
+                        <img src="img/story.jpg">
+                    </div>
+                    <p class="name">
+                        LD01 LOUNGE CHAIR
+                    </p>
+                    <p class="totalPrice">$200</p>
+                </div>
+                <div class="itemQuantaty">
+                    <span class="qtyOption"><i class="fas fa-minus"></i></span>
+                    <span>1</span>
+                    <span class="qtyOption"><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+        </div>
+        <hr class="dividerLine">
+        <div class="orderTotal">
+            <p>
+                <Span>SubTotal</Span>
+                <span>$155</span>
+            </p>
+            <p>
+                <span>Tax (10%)</span>
+                <span>$15.5</span>
+            </p>
+            <p>
+                <span>Delivery Fee</span>
+                <span>$5</span>
+            </p>
+            <div class="orderPromo">
+                <input class="inputPromo" type="text" placeholder="Apply Promo"></input>
+                <button class="btnPromo">Find Promo</button>
+            </div>
+            <hr class="dividerLine">
+            <p>
+                <span>Total</span>
+                <span>$205</span>
+            </p>
+        </div>
+        <button class="checkBtn">
+            Checkout
+        </button>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
